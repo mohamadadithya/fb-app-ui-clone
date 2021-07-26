@@ -1,0 +1,357 @@
+/* Copyright 2021 Facebook UI Clone by Mohamad Adithya */
+
+:root {
+  font-size: 14px;
+  --primaryColor: #1778F2;
+  --secondaryColor: #F7F7F7;
+  --tertierColor: #D3D3D3;
+  font-weight: 350;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+input:focus {
+  outline: none;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  pointer-events: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: Helvetica;
+  padding-top: 100px;
+  overflow-x: hidden;
+}
+
+.container {
+  margin: 0 1em;
+}
+
+.top-header {
+  background-color: white;
+  padding-top: 1em;
+  border-bottom: 1px solid var(--tertierColor);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.top-header .row-1 .container {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.top-header .row-1 .logo {
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: 'Klavika Bold', sans-serif;
+  color: var(--primaryColor);
+}
+
+.top-header .row-1 .menus {
+  font-size: 1.2rem;
+}
+
+.top-header .row-1 .menus .menu {
+  padding: .5em;
+  border-radius: 50%;
+  background-color: var(--secondaryColor);
+}
+
+.top-header .row-1 .menus .search {
+  margin-right: 5px;
+}
+
+.top-header .row-2 .container {
+  margin: 0 .2em;
+}
+
+.top-header .row-2 nav ul {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  place-items: center;
+  justify-content: space-between;
+}
+
+.top-header .row-2 nav ul li {
+  padding: .6em 1em;
+  font-size: 1.3rem;
+  color: gray;
+}
+
+.top-header .row-2 nav ul li.active {
+  border-bottom: 2px solid var(--primaryColor);
+}
+
+.create-status {
+  border-bottom: 1px solid var(--tertierColor);
+  padding: 1em 0;
+}
+
+.create-status .container {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  gap: 2px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.create-status .photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.create-status .input {
+  border: 1px solid var(--tertierColor);
+  border-radius: 25px;
+  padding: .8em 1.5em;
+}
+
+.create-media-statuses {
+  padding: .8em 0;
+  border-bottom: 13px solid var(--tertierColor);
+}
+
+.create-media-statuses ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  color: gray;
+  font-size: 1.1rem;
+}
+
+.create-media-statuses ul li:nth-child(2) {
+  border-left: 1px solid var(--tertierColor);
+  padding: .2em 1.9em;
+  border-right: 1px solid var(--tertierColor);
+}
+
+.create-media-statuses .live {
+  color: red;
+}
+
+.create-media-statuses .photo {
+  color: limegreen;
+}
+
+.create-media-statuses .room {
+  color: rebeccapurple;
+}
+
+.statuses {
+  height: 180px;
+  padding: .1em 0;
+  display: grid;
+  align-items: center;
+  border-bottom: 13px solid var(--tertierColor);
+  overflow: auto;
+  scrollbar-width: none;
+}
+
+.statuses::-webkit-scrollbar {
+  display: none;
+}
+
+.statuses .container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px;
+}
+
+.statuses .status {
+  height: 160px;
+  width: 90px;
+  position: relative;
+}
+
+.statuses .status.main-user {
+  background-color: var(--secondaryColor);
+  border-radius: 15px;
+  border: 2px solid var(--tertierColor);
+}
+
+.statuses .status.main-user .photo {
+  height: 65%;
+  border: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.statuses .status.main-user .plus-icon {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  background-color: var(--primaryColor);
+  color: white;
+  border-radius: 50%;
+  padding: 2px 8px;
+  border: 3px solid var(--secondaryColor);
+}
+
+.statuses .status.main-user .username {
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.statuses .status:last-child {
+  margin-right: 1em;
+}
+
+.statuses .status .photo {
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--tertierColor);
+  border-radius: 15px;
+}
+
+.statuses .status .username {
+  color: white;
+  position: absolute;
+  bottom: 3px;
+  left: 8px;
+  font-size: .8rem;
+}
+
+.statuses .status .user-photo {
+  width: 30px;
+  height: 30px;
+  padding: 1.5px;
+  border: 2px solid var(--primaryColor);
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+.posts .post {
+  padding-top: 1em;
+  border-bottom: 13px solid var(--tertierColor);
+}
+
+.posts .post .username {
+  font-size: 1.3rem;
+  margin-bottom: 3px;
+}
+
+.posts .post .photo {
+  width: 50px;
+  height: 50px;
+  margin-right: 12px;
+  border-radius: 50%;
+}
+
+.posts .post .post-info {
+  color: gray;
+}
+
+.posts .post .menu {
+  font-size: 1.5rem;
+  color: gray;
+}
+
+.posts .post .text {
+  font-size: 1.3rem;
+  padding: 1.2em 0;
+}
+
+.posts .post .contents {
+  margin-bottom: 1.3em;
+}
+
+.posts .post .contents .text {
+  font-size: 1.1rem;
+}
+
+.posts .post .contents .images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+}
+
+.posts .post .reacts .react {
+  margin-right: 3px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.posts .post .reacts .react:nth-child(2) {
+  margin-left: -7px;
+  z-index: -1;
+}
+
+.posts .post .reacts .react:nth-child(3) {
+  margin-left: -7px;
+  z-index: -2;
+}
+
+.posts .post .actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  padding: 1em 0;
+}
+
+.posts .post .actions li {
+  font-size: 1.1rem;
+}
+
+// Utility Class
+.column {
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.gray {
+  color: gray;
+}
+
+.bortom-1 {
+  border-bottom: 1px solid var(--tertierColor);
+}
+
+.pb-13 {
+  padding-bottom: 13px;
+}
+
+.center {
+  align-items: center;
+}
+
+.black {
+  color: black !important;
+}
+
+.1-column {
+  grid-template-columns: 1fr;
+}
+
+/* Copyright 2021 Facebook UI Clone by Mohamad Adithya */
