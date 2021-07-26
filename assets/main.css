@@ -130,17 +130,21 @@ body {
 }
 
 .create-media-statuses ul {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
   color: gray;
   font-size: 1.1rem;
+  padding: .2em 0;
+}
+
+.create-media-statuses ul li {
+  flex-grow: 1;
+  text-align: center;
 }
 
 .create-media-statuses ul li:nth-child(2) {
   border-left: 1px solid var(--tertierColor);
-  padding: .2em 1.9em;
   border-right: 1px solid var(--tertierColor);
 }
 
