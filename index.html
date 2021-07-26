@@ -1,0 +1,219 @@
+<!-- Copyright 2021 Facebook UI Clone by Mohamad Adithya -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/assets/main.css" type="text/css" media="all" />
+    <link href="http://fonts.cdnfonts.com/css/klavika-medium" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>Fvckbook (Facebook UI Clone)</title>
+  </head>
+  <body>
+    <header class="top-header">
+      <div class="row-1">
+        <div class="container flex">
+          <h2 class="logo">Fvckbook</h2>
+          <div class="menus">
+            <i class="bi bi-search menu search"></i>
+            <i class="bi bi-messenger menu"></i>
+          </div>
+        </div>
+      </div>
+      <div class="row-2">
+        <div class="container">
+          <nav>
+            <ul>
+              <li class="active bi bi-house-door"></li>
+              <li class="bi bi-people"></li>
+              <li class="bi bi-collection-play"></li>
+              <li class="bi bi-shop"></li>
+              <li class="bi bi-bell"></li>
+              <li class="bi bi-list"></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="create-status">
+      <div class="container">
+        <img class="photo" src="/assets/main-user.jpg" alt="User" />
+        <input type="text" class="input" id="status" placeholder="What's on your mind?" />
+      </div>
+    </section>
+    <section class="create-media-statuses">
+      <ul>
+        <li><i class="bi bi-camera-video live"></i> Live</li>
+        <li><i class="bi bi-images photo"></i> Photo</li>
+        <li><i class="bi bi-file-plus room"></i> Room</li>
+      </ul>
+    </section>
+    <section class="statuses">
+      <div class="container">
+        <div class="status main-user">
+          <img class="photo" id="photo" src="/assets/main-user.jpg" alt="Main User" />
+          <span class="plus-icon">+</span>
+          <p class="username black">Create Story</p>
+        </div>
+        <div class="status">
+          <img class="thumbnail photo" id="thumbnail" src="/assets/thumbnails/thumb-1.jpg" alt="User Status" />
+          <img src="/assets/users/user-1.jpeg" alt="User" class="user-photo">
+          <p class="username">Oliver Sykes</p>
+        </div>
+        <div class="status">
+          <img class="thumbnail photo" id="thumbnail" src="/assets/thumbnails/thumb-2.jpg" alt="User Status" />
+          <img src="/assets/users/user-2.jpg" alt="User" class="user-photo">
+          <p class="username">Bella</p>
+        </div>
+        <div class="status">
+          <img class="thumbnail photo" id="thumbnail" src="/assets/thumbnails/thumb-3.jpg" alt="User Status" />
+          <img src="/assets/users/user-3.jpg" alt="User" class="user-photo">
+          <p class="username">Kurt Cobain</p>
+        </div>
+        <div class="status">
+          <img class="thumbnail photo" id="thumbnail" src="/assets/thumbnails/thumb-4.jpeg" alt="User Status" />
+          <img src="/assets/users/user-4.jpeg" alt="User" class="user-photo">
+          <p class="username">Jordan Fish</p>
+        </div>
+        <div class="status">
+          <img class="thumbnail photo" id="thumbnail" src="/assets/thumbnails/thumb-5.jpeg" alt="User Status" />
+          <img src="/assets/users/user-5.jpeg" alt="User" class="user-photo">
+          <p class="username">Krist Novoselic</p>
+        </div>
+      </div>
+    </section>
+    <section class="posts">
+      <div class="post">
+        <header class="flex between container">
+          <div class="flex">
+            <img src="/assets/users/user-1.jpeg" alt="User" class="photo">
+            <div class="column">
+              <h2 class="username">Oliver Sykes</h2>
+              <small class="post-info">5h &bullet; <i class="bi bi-people-fill"></i></small>
+            </div>
+          </div>
+          <i class="bi bi-three-dots menu"></i>
+        </header>
+        <div class="contents">
+          <div class="container">
+            <p class="text">Then and now photos of Bring Me The Horizon</p>
+          </div>
+          <div class="images">
+            <img src="/assets/images/image-1.jpeg" alt="Image 1" class="image">
+            <img src="/assets/images/image-2.jpeg" alt="Image 2" class="image">
+            <img src="/assets/images/image-3.jpeg" alt="Image 3" class="image">
+            <img src="/assets/images/image-4.jpeg" alt="Image 4" class="image">
+          </div>
+        </div>
+        <div class="flex between center gray bortom-1 pb-13 container">
+          <div class="flex center reacts">
+            <img src="/assets/reacts/like.svg" class="react" alt="Like">
+            <img src="/assets/reacts/love.svg" class="react" alt="Love">
+            <p>230</p>
+          </div>
+          <p>60 Comments &bullet; 33 Shares</p>
+        </div>
+        <ul class="actions gray">
+          <li><i class="bi bi-hand-thumbs-up"></i> Like</li>
+          <li><i class="bi bi-chat"></i> Comment</li>
+          <li><i class="bi bi-share"></i> Share</li>
+        </ul>
+      </div>
+      <div class="post">
+        <div class="container">
+          <header class="flex between">
+            <div class="flex">
+              <img src="/assets/users/user-3.jpg" alt="User" class="photo">
+              <div class="column">
+                <h2 class="username">Kurt Cobain</h2>
+                <small class="post-info">2h &bullet; <i class="bi bi-people-fill"></i></small>
+              </div>
+            </div>
+            <i class="bi bi-three-dots menu"></i>
+          </header>
+          <p class="text">Yes, i eat cow and i'm not proud.</p>
+          <div class="flex between center gray bortom-1 pb-13">
+            <div class="flex center reacts">
+              <img src="/assets/reacts/like.svg" class="react" alt="Like">
+              <p>10</p>
+            </div>
+            <p>10 Comments</p>
+          </div>
+          <ul class="actions gray">
+            <li><i class="bi bi-hand-thumbs-up"></i> Like</li>
+            <li><i class="bi bi-chat"></i> Comment</li>
+            <li><i class="bi bi-share"></i> Share</li>
+          </ul>
+        </div>
+      </div>
+      <div class="post">
+        <header class="flex between container">
+          <div class="flex">
+            <img src="/assets/users/user-6.png" alt="User" class="photo">
+            <div class="column">
+              <h2 class="username">Burger King</h2>
+              <small class="post-info">Sponsored &bullet; <i class="bi bi-globe"></i></small>
+            </div>
+          </div>
+          <i class="bi bi-three-dots menu"></i>
+        </header>
+        <div class="contents">
+          <div class="container">
+            <p class="text">Enjoy your hangout with our special offer today!.</p>
+          </div>
+          <img src="/assets/images/image-5.jpeg" alt="BK promo" class="image">
+        </div>
+        <div class="flex between center gray bortom-1 pb-13 container">
+          <div class="flex center reacts">
+            <img src="/assets/reacts/like.svg" class="react" alt="Like">
+            <img src="/assets/reacts/wow.svg" alt="Wow" class="react">
+            <img src="/assets/reacts/love.svg" alt="Love" class="react">
+            <p>1.5k</p>
+          </div>
+          <p>930 Comments &bullet; 1.2k Shares</p>
+        </div>
+        <ul class="actions gray">
+          <li><i class="bi bi-hand-thumbs-up"></i> Like</li>
+          <li><i class="bi bi-chat"></i> Comment</li>
+          <li><i class="bi bi-share"></i> Share</li>
+        </ul>
+      </div>
+      <div class="post">
+        <header class="flex between container">
+          <div class="flex">
+            <img src="/assets/users/user-4.jpeg" alt="User" class="photo">
+            <div class="column">
+              <h2 class="username">Jordan Fish</h2>
+              <small class="post-info">8h &bullet; <i class="bi bi-people"></i></small>
+            </div>
+          </div>
+          <i class="bi bi-three-dots menu"></i>
+        </header>
+        <div class="contents">
+          <div class="container">
+            <p class="text">LOL 🤣</p>
+          </div>
+          <img src="/assets/images/image-6.jpeg" alt="Meme" class="image">
+        </div>
+        <div class="flex between center gray bortom-1 pb-13 container">
+          <div class="flex center reacts">
+            <img src="/assets/reacts/like.svg" class="react" alt="Like">
+            <img src="/assets/reacts/wow.svg" alt="Wow" class="react">
+            <img src="/assets/reacts/haha.svg" alt="Haha" class="react">
+            <p>250</p>
+          </div>
+          <p>25 Comments &bullet; 10 Shares</p>
+        </div>
+        <ul class="actions gray">
+          <li><i class="bi bi-hand-thumbs-up"></i> Like</li>
+          <li><i class="bi bi-chat"></i> Comment</li>
+          <li><i class="bi bi-share"></i> Share</li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
+
+<!-- Copyright 2021 Facebook UI Clone by Mohamad Adithya -->
