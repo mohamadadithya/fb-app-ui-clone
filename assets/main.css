@@ -11,7 +11,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box
+  box-sizing: border-box;
   font-size: inherit;
   font-family: inherit;
   font-weight: inherit;
@@ -364,7 +364,8 @@ body {
   font-size: 1.1rem;
 }
 
-// Utility Class
+/* Utility Class */
+
 .column {
   flex-direction: column;
 }
@@ -395,10 +396,6 @@ body {
 
 .black {
   color: black !important;
-}
-
-.1-column {
-  grid-template-columns: 1fr;
 }
 
 /* Copyright 2021 Facebook UI Clone by Mohamad Adithya */
